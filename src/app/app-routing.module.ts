@@ -6,6 +6,7 @@ import { StocksComponent } from './stocks/stocks.component';
 import { ParcAutoComponent } from './parc-auto/parc-auto.component';
 import { VentesComponent } from './ventes/ventes.component';
 import { ProfilsComponent } from './profils/profils.component';
+import { GestionDevisComponent } from './gestion-devis/gestion-devis.component';
 
 
 
@@ -16,7 +17,9 @@ const routes: Routes = [
   {path: 'parc_auto', component: ParcAutoComponent},
   {path: 'ventes', component: VentesComponent},
   {path:'profils', component: ProfilsComponent},
+  {path: 'devis', component:GestionDevisComponent},
   {path: '', pathMatch: 'full', redirectTo:'acceuil'},
+ 
 
 
 
