@@ -6,7 +6,7 @@
             <div class="col-sm-2"><h1>Logo</h1></div>
             <div class="col-sm-2"><h1>Ini</h1></div>
                 
-            <div class="col-sm-6"><h1>Gestion des devis</h1></div>
+            <div class="col-sm-6"><h1>Création de devis</h1></div>
 
             <div class="col-sm-2"><h1 [routerLink]="['/acceuil']"><img src="../../assets/img/logout.png" alt=""></h1></div>
     </div>
@@ -17,61 +17,59 @@
     <div class="row">
            <div class="col-sm-3"><h1 id="stock" [routerLink]="['/ventes']">Ventes</h1></div>
            <div class="col-sm-6"><h1 id="stock" [routerLink]="['/parc_auto']">Parc automobile</h1></div>
-           
+           <div class="col-sm-3"><h1 id="stock" [routerLink]="['/liste_devis']">Liste client</h1></div>
           
     </div>
     <hr>
 </div>
 
 
-<div class="row">
-    <div class="col-sm-4 offset-1 ">
-        <label for="client">Choisissez un client: </label>
-        <select name="" id="client">
-            <option value="1">JM dudu</option>
-            <option value="2">JM dodu</option>
-            <option value="3">JM dadu</option>
-        </select>
-    </div>
     
-    <br>
-    <div class="col-sm-4 offset-2"><button>Ajouter client</button></div>
- </div>
+
  <br>
-    <div class="row">
-            <div class="col-sm-5 offset-1 ">
-                    <label for="voiture">Choisissez une voiture: </label>
-                    <select name="" id="voiture">
-                    <option value="1">Mercedes-Benz</option>
-                    <option value="2">Porsche</option>
-                    <option value="3">Ferrari</option>
+
+
+<form>
+        <div class="form-group">
+                <label for="exampleFormControlSelect1">Choisissez un client:</label> <button class="bouton_devis" [routerLink]="['/creation_client']">Ajouter client</button>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
                 </select>
-            </div>
-          
-            <div class="col-sm-6">
-            <label for="quantité">Quantité: </label>
-            <input type="text" name="" id="quantité">
-        </div>
-    
-   
-</div>
-<br>
-<div class="row">
-        <div class="col-sm-12">
-          <textarea name="" id="" cols="12" rows="10">
-Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-Culpa quisquam eaque, dolorem esse a tenetur voluptate assumenda!
-Ut, voluptate. Quasi perferendis omnis nihil voluptatem dolorem debitis,
-unde nisi! Quo, iste?
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolor corrupti modi debitis ab.
-Similique omn
-voluptatum possimus odit perspiciatis aliquam a ratione quia,
-maxime facere nisi necessitatibus consequatur expedita?
+              </div>
 
 
-          </textarea>  
-        </div>
-</div>
+              <div class="form-group">
+                    <label for="StaticVoiture">Choisissez une voiture:</label>
+                    <select class="form-control" id="StaticVoiture">
+                            <option value="1">Mercedes-Benz</option>
+                            <option value="2">Porsche</option>
+                            <option value="3">Ferrari</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                        <label for="staticQuantité">Quantité:</label>
+                        <input type="text" class="form-control" id="staticQuantité" >
+                      </div>
+                      <div class="form-group">
+                            <label for="staticDescription">description du produit:</label>
+                            <div class="col-sm-11">
+                            <textarea class="form-control" id="staticDescription" rows="3"></textarea>
+                          </div>
+                        </div>
+
+                          <div class="form-group">
+                                <label for="staticValidation" class="col-sm-2 col-form-label"></label>
+                                  <div class="col-sm-10">
+                                        <button type="submit">Créer le nouveau devis</button>
+                                  </div>
+                                </div>
+
+                         
+       </form>
 
 
 

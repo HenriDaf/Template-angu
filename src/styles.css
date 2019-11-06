@@ -3,7 +3,9 @@
 
 /* CSS used here will be applied after bootstrap.css */
 
-
+.bouton_devis{
+    display: inline;
+}
 
 textarea{
     width:90%;
@@ -130,7 +132,7 @@ text-align: center;
    }
 
    label{
-    text-align:left;
+    text-align:center;
     }
     .search{
     text-align: center;

@@ -12,6 +12,8 @@ import { ParcAutoComponent } from './parc-auto/parc-auto.component';
 import { VentesComponent } from './ventes/ventes.component';
 import { ProfilsComponent } from './profils/profils.component';
 import { GestionDevisComponent } from './gestion-devis/gestion-devis.component';
+import { CreationClientComponent } from './creation-client/creation-client.component';
+import { ListeDevisComponent } from './liste-devis/liste-devis.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,11 @@ import { GestionDevisComponent } from './gestion-devis/gestion-devis.component';
    
     ProfilsComponent,
    
-    GestionDevisComponent
+    GestionDevisComponent,
+   
+    CreationClientComponent,
+   
+    ListeDevisComponent
   ],
   imports: [
     BrowserModule,
